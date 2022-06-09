@@ -11,7 +11,7 @@ public class Grafo {
 		System.out.println("|=== Bem-Vindo ===|");
 		System.out.println("|=== Insira o nome do arquivo ===|");
 		String arquivo = sc.nextLine();
-		System.out.println("|=== {1}-Lista Adj {2}-Matriz Adj {3} Matriz Inc ===|");
+		System.out.println("|=== {1}-Lista Adj {2}-Matriz Adj {3}-Matriz Inc ===|");
 		int opcao =1;
 		opcao = sc.nextInt();	
 		
@@ -25,9 +25,9 @@ public class Grafo {
 			ma.Arquivo(arquivo);
 			completo = ma.completo();
 			if(completo) 
-				System.out.println("|===  O Grafo é Completo  ===|");
+				System.out.println("|===  O Grafo Ã© Completo  ===|");
 			else {
-				System.out.println("|=== O Grafo é Incompleto ===|");
+				System.out.println("|=== O Grafo Ã© Incompleto ===|");
 				ma.completar();
 			}
 			break;
@@ -37,7 +37,7 @@ public class Grafo {
 			break;
 		}	
 		sc.close();
-		System.out.println("|======= Execução Finalizada =======|");
+		System.out.println("|======= ExecuÃ§Ã£o Finalizada =======|");
 	}	
 	
 }
